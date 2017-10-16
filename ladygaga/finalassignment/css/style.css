@@ -1,0 +1,34 @@
+@media screen and (max-width: 700px) 
+              and (min-width:500px) {
+    p {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: #c75bda;
+    }
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 15px;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-bottom: 5em;
+}
+.btn-group {
+    padding-bottom: 8em;   
+}
+#specialjumbotron {
+    padding-top: 50px;
+}
+#only {
+    padding-bottom: 30px;
+}
