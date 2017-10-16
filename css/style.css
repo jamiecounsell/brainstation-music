@@ -13,10 +13,6 @@ html {
     display: inline;
 }
 
-.card {
-    height: 320px;
-}
-
 /* 
  * BEGIN -----------------------------------------------------
  * Courtesy https://bootsnipp.com/Tawshif 
@@ -137,3 +133,20 @@ h5 {
  * Courtesy https://bootsnipp.com/Tawshif 
  * at https://bootsnipp.com/snippets/featured/bootstrap-4-card
  */
+
+
+.card {
+    height: 325px;
+    padding:0 0 60px 0 !important;
+    position: relative;
+}
+
+.card img {
+    overflow: hidden;
+}
+
+.card .card-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
