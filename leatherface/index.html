@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Assignment 1 - Leatherface Fan page</title> 
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="music.html">More Leatherface</a></li>
+            </ul>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img-responsive center-block" src="img/leatherface-logo.png" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img id="img1" class="img-responsive center-block" src="img/leatherface.jpg"/></center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p>Leatherface started in Sunderland, UK in 1988 when guitarist Dickie Hammond saw that Frankie Stubbs played the same brand of guitar that he did and decided that they should play in a band together. The pairing never really made sense because the two had very different musical influences: Stubbs is responsible for the melody and poetry in Leatherface while Hammond had already recorded two albums with UK hardcore punk band Hung, Drawn, Quartered. Dickie recruited HDQ drummer Andrew Laing to back the pair and they found one of the dozen or so bass players that would round out the lineup over their 27 year lifespan.</p>
+        <br>
+            <p>It took Leatherface a few albums to develop their sound. The early efforts were by no means bad but Stubbs had not quite honed his vocal style and they hadn’t quite struck that perfect balance between his melodic leads and Hammond’s raging rhythm. Their debut album Cherry Knowle sounds like their later efforts played at a higher speed but the band gradually slowed the tempo a bit with each subsequent release as Stubbs developed his musical chops as well as his vocal and lyrical style.</p>
+        <br>
+            <p>With the 1991 release of Mush, their third LP, Leatherface had evolved into something wholly unique in the genre of punk rock. Usually people who start out in that world but develop their song writing and musical skills to the degree that Stubbs did move on to musical styles that are more financially lucrative or audiences that are more capable of appreciating their skill, but Leatherface had no real interest in that. They just kept exploring the little niche they had carved for themselves and seeing how far they could push the boundaries of the genre.</p>
+        <br>
+            <p>After they released Minx, their 4th LP, in 1993 the band decided go their separate ways. It was never a permanent split, just an opportunity to pursue some other creative endeavours. Stubbs went on to record more excellent material as a solo artist and with his new bands Pope and Jesse while Dickie would play in a half-dozen bands over the next 20 years or so but every now and then they would get as much of the old band back together as possible just to see if they still had it. As they aged they lost the intensity and had a bit of trouble finding their groove but you could be sure that every new album would have at least a hint of what had made them so special in those first 5 years of existence.</p>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="hidden-md hidden-sm hidden-xs" id="submit-label">Submit A Comment:</h2>
+            </div>
+            <div class="col=md-6">
+                <h2>Comments:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class-"col-lg-8">
+                <div class="name-form col-xs-3">
+                <label for="name" id="name-label">Name:</label>
+                <textarea class="form-control" rows="1"id="username"></textarea>        
+                </div>
+            </div>
+        </div>
+        <div class="row">
+	        <div class="comment-form col-md-6">
+            <label for="comment" id="comment-label">Comment:</label>
+            <textarea class="form-control" rows="4"id="comment"></textarea>
+            <input type="submit" id="submit-comment" class="btn" value="Submit Comment">        
+            </div>
+            <div class="col-md-6" id="comment-thread">
+                <p id="name" class="username"></p> <p id="comments"></p>  
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+    $(document).ready(function() {
+        var img1= $('#img1');
+        img1.hover(
+            //mouseover
+        function () {
+        $(this).css({ WebkitTransform: 'rotate(15deg)'});
+            },
+            //mouseout
+        function () {
+        $(this).css({ WebkitTransform: 'rotate(0deg)'});
+        });
+        $('#submit-comment').click(function(){
+            var comment_input= $(comment).val();
+            var name_input= $(username).val();
+            $('#name').append(name_input, ": ");
+            $('#comments').append(comment_input);
+            });
+        //to keep people from trying to submit a second comment
+        $('#submit-comment').click(function() {
+            $('#comment').hide();
+            $('#submit-comment').hide();
+            $('#comment-label').hide();
+            $('#name-label').hide();
+            $('#submit-label').hide();
+            $('#username').hide();
+        });
+    });
+    </script>
+</body>
+</html>

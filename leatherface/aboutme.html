@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style="background-color:#ddd">
+<nav class="navbar navbar-default" id="nav-fade">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">About Me</a></li>
+                <li><a href="music.html">More Leatherface</a></li>
+            </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">About Me</h1>
+        <p class="text-center">A Bit of Information About the Creator of This Project</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <img class="img-responsive img-rounded" id="my-pic" src="img/me.jpg" />
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Introduction to Me
+            </div>
+            <div class="panel-body" id="aboutme">
+            <p>First and foremost I really do not like writing biographies, especially about myself. I never really know what information would be considered relevant or information so instead of building a narrative it tends to come out like a data dump, leaving the reader to pick out whatever details they find interesting to them.</p>
+            <br>                    
+            <p>I’m here because I lucked into a very good work situation and promised myself that instead of getting comfortable in my slightly less stressful life I would invest the extra income in myself and develop additional skills that would hopefully lead to something even better. I’ve always had an interest in coding but there’s a mountain of information out there so it can be really difficult to parse through it all and find the right path to develop your skills. Any time you’re venturing into a new place with an end point in mind but no clue how to get there it makes sense to hire a guide - that’s where Brainstation comes in.</p>
+            <br>
+            <p>Hobbies and such are pretty much off limits for the rest of the year because of this but if I did have free time you would find me watching entirely too much basketball, reading, writing or listening to music. I’m a Toronto Raptors fan mostly because of geographic proximity and I’ll watch any professional basketball I can find(NBA, WNBA, EuroLeague) and usually book time off work to be able to take in the major international tournaments in their entirety. I tend to read more non-fiction than fiction but lately I’ve been spending most of my reading time with the Marvel Unlimited app or trying to get through Terry Pratchett’s excellent Discworld series. My music tastes are all over the place but tend to fall into extremes: really sad, really aggressive, etc. Lately I’ve gravitated toward female-fronted indie pop/indie rock music and Japanese punk rock but there’s always some hip hop/country/folk/hardcore/a million annoying subgenre names mixed in.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Favourite Writers:
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li>George Orwell</li>
+                        <li>Aldous Huxley</li>
+                        <li>Douglas Adaoms</li>
+                        <li>Nathaniel Friedman(aka Bethlehem Shoals</li>
+                        <li>Mary Stewart</li>
+                        <li>John Ralston Saul</li>
+                        <li>Shea Serrano</li>
+                        <li>John Ralson Saul</li>
+                        <li>Soseki Natsume</li>
+                        <li>Len Deighton</li>
+                        <li>Jack McCallum</li>
+                        <li>Sam McPheeters</li>
+                        <li>Lester Bangs</li>
+                        <li>Hunter S Thompson</li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+         <div class="col-sm-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Favourite Musical Artists(at the moment):
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li>Leatherface</li>
+                        <li>Allo Darlin'</li>
+                        <li>Frodus</li>
+                        <li>Born Against</li>
+                        <li>Cursed</li>
+                        <li>Townes Van Zandt</li>
+                        <li>Wiki</li>
+                        <li>Run the Jewels</li>
+                        <li>the Repos</li>
+                        <li>Waxahatchee</li>
+                        <li>Hop Along</li>
+                        <li>Anderson Paak</li>
+                        <li>Bastard</li>
+                        <li>Vince Staples</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    var imgfade= $('#my-pic');
+    imgfade.hover(
+        //mouseover
+    function () {
+    $(this).fadeOut(5000);
+        },
+        //mouseout
+    function () {
+    $(this).fadeIn();
+    });
+});
+
+</script>
+    
+</body>
+</html>
