@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FleetWood Mac</title>
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <!--NAVBAR-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tour.html">TOUR</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT ME</a>
+        </li>
+    </ul>
+    <!--HEADING/BIO-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Fleetwood Mac</h1>
+                <p class="lead">Fleetwood Mac are a British-American rock band, formed in London in 1967. 
+                    The band have sold more than 100 million records worldwide, making them one of the world's 
+                    best-selling bands. In 1998, selected members of Fleetwood Mac were inducted into the Rock 
+                    and Roll Hall of Fame, and received the Brit Award for Outstanding Contribution to Music.</p>
+        </div>
+    </div>
+    <!--MAIN IMAGE-->
+    <div class="col-xs-12">
+    <img id = "main_pic" src="http://1.bp.blogspot.com/-eiwvQWLw7U8/UuJmFWqdAnI/AAAAAAAAmlY/flnRZn-RVvg/s1600/Fleetwood+Mac+5.jpg"/>
+   </div>
+    <!--ALBUMS-->
+    <table class="col-xs-12">
+        <tr>
+            <td class="col-xs-3">
+                <a href ="https://www.youtube.com/watch?v=p6Fdm3-dnr0&list=PLcX_QGLREpvm_Y3WcoAeDXM9Igf-dlW7L">
+                    <img class="album_pic" src = "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/FMacRumours.PNG/220px-FMacRumours.PNG"/>
+                </a>
+            </td>
+            <td class="col-xs-9 block">
+                <p class="about">
+                        Rumours is the eleventh studio album by British-American rock band Fleetwood Mac.
+                        Largely recorded in California during 1976, it was produced by the band with Ken 
+                        Caillat and Richard Dashut and was released on 4 February 1977 by Warner Bros. Records.
+                        The record reached the top of both the United States Billboard chart and the United
+                        Kingdom Albums Chart. <b>Click the image to listen to this album!</b>
+                </p>  
+            </td>
+        </tr>
+        <tr>
+            <td class="col-xs-3">
+                <a href ="https://www.youtube.com/watch?v=vAHBWXlVL88&list=PLWnVxuqvY7Jj02uzJZw0D7Ue4g5b8hO5c">
+                    <img class="album_pic" src="https://upload.wikimedia.org/wikipedia/en/0/0b/Fleetwood_Mac_-_Fleetwood_Mac.jpg"/>
+                </a>
+            </td>
+            <td class="col-xs-9 block">
+                    <p class="about">
+                            Fleetwood Mac is the tenth studio album by British-American rock band Fleetwood Mac,
+                             released in July 1975 by Reprise Records. It was the band's second eponymous album;
+                              the first was their 1968 debut album. Among Fleetwood Mac fans, the album is often 
+                              referred to as the White Album.[8] This is the first Fleetwood Mac album to feature
+                               Lindsey Buckingham as guitarist and Stevie Nicks as vocalist, after Bob Welch departed
+                                the band in late 1974. <b>Click the image to listen to this album!</b>
+                            </p>  
+                    </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-xs-3">
+                    <a href = "https://www.youtube.com/watch?v=QF6xU70O73c&list=PL4-oCE2y-CrGM9fZhXqaiiMXFDwgr5Of1">
+                        <img class="album_pic" src = "https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Fleetwood_Mac_-_Tango_in_the_Night.jpg/220px-Fleetwood_Mac_-_Tango_in_the_Night.jpg"/>
+                    </a>
+            </td> 
+            <td class="col-xs-9 block">
+                    <p class="about">
+                            Tango in the Night is the 14th studio album by British-American rock band Fleetwood Mac. 
+                            Released in April 1987, it is the fifth and to date last studio album from the band's most
+                             successful line-up of Lindsey Buckingham, Stevie Nicks, Christine McVie, John McVie and Mick 
+                             Fleetwood. <b>Click the image to listen to this album!</b>
+                    </p>
+            </td>  
+        </tr>
+    </table>
+    <!--COMMENT BOX-->
+    <h2>Comments</h2>
+    <div class="box">
+        <input type='text' name="text" class="comment-box"/>
+        <input type="submit" class="btn btn-primary add" name="submit" data-toggle="modal" data-target="#exampleModal"/>
+      
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thanks for the comment!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--COMMENTS LIST-->
+    <ul class="comments"></ul>
+    </div>
+    <!--OFFICIAL WEBSITE-->
+    <div class="col-xs-12">
+        <p id="website">
+            Check out FleetWood Mac's official Website <a id="here" href="https://www.fleetwoodmac.com/#!">HERE!</a>
+        </p>
+    </div>
+</body>
+</html>
