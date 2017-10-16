@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+.container-fluid {
+    position: relative;
+    padding: 0em 2em;
+}
+.header {
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+.header h1 {
+    font-size: 2.5em;
+    text-align: center;
+    display: none;
+
+}
+.nav {
+    font-size: 1.2em;
+    position: relative;
+    transform: translateY(0%) translateX(-50%);    
+    left: 50%;
+    top: 0%;
+}
+.nav a {
+    background-color: black;
+    color: white;
+}
+.header-image {
+    background-color: black;
+}
+.header-image img {
+    position: relative;
+    transform: translateY(0%) translateX(-50%);
+    left: 50%;
+    top: 0%;
+}
+
+.content{
+    margin-top: 2em;
+    line-height: 1.8em;
+}
+
+.content h1, h3 {
+    font-style: italic;
+}
+a {
+    color: rgb(45, 10, 61);
+    text-decoration-line: none;
+    font-weight: 600;
+}
+.album-image img {
+    width: 100%;
+    margin: 1em auto;
+}
+.album-image a img {
+    position: relative;
+    border: .2em solid grey;
+}
+.love img {
+    text-align: center;
+    width: 100%;
+}
+#msg {
+    margin: 2em;
+}
+#submitComment {
+    border: none;
+    color: white;
+    padding: .2em .5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+
+}
+.submittedComments {
+    margin-top: 2em;
+    border-top: .1em solid grey;
+}
+.footer {
+    background-color: black;
+    margin-top: 5em;
+    padding: 3em 0em;
+    color: white;
+    text-align: center;
+}
+.footer a {
+    color: white;
+}
+/* Large devices (desktops, laptops, between 700 and 900px) */
+@media screen and (min-width: 1200px) { 
+    .header h1 {
+        font-size: 2em;
+    }
+    .nav {
+        text-align: center;
+    }
+
+}
+/* Medium devices (desktops, laptops, between 700 and 900px) */
+@media screen and (max-width: 992px) { 
+    .header h1 {
+        font-size: 2em;
+    }
+    .nav {
+        text-align: center;
+    }
+
+}
+/* Small devices (tablets, between 500px and 700px) */
+@media screen and (max-width: 768px) { 
+    .header h1 {
+        font-size: 2em;
+    }
+    .nav {
+        text-align: center;
+    }
+    .header-image img {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+/*changing font size and color at 700px, as per assignment*/
+@media screen and (max-width: 700px) {
+    .content h1 {
+        font-size: 1.7em;
+        color: darkred;
+    }
+}
+
+/* Extra small devices (phones, less than 500px) */
+@media screen and (max-width: 500px)  { 
+    .content h1 {
+        font-size: 1.6em;
+        color: purple;
+    }
+    .nav {
+        text-align: center;
+    }
+    .header-image img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
