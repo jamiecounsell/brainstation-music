@@ -1,0 +1,162 @@
+clearfix {
+    overflow: auto;
+}
+body { 
+    background: black;
+    margin: 0 auto;}
+
+.container1 {
+    position: fixed;
+    background-color: black;
+    color: lemonchiffon;
+    margin-top:0;
+    border: grey solid 1px;
+    width: 100vw; 
+    z-index: 1;  
+}
+
+#band {
+    width: 100vw;
+    border: grey solid 1px;
+}
+
+p {
+    color: white;
+    font-size: 1em;
+}
+
+
+h1  {
+   
+    font-size: 2em;
+    text-align: center;
+}
+
+.bio {
+    padding-top: 90px;
+    width: 100vw;
+    text-align: center;
+
+}
+
+.footer {
+    width:100vw;
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.col-xs-6 {
+    padding: 0;
+}
+img.album {
+    width: 10em;;
+    height: 10em;
+    float: left;
+    border: 2px gray solid;
+    padding: 0;
+
+}
+
+.links {
+    color: white;
+}
+
+
+img.tours {
+    width: 100vw;
+    height: 28em;
+
+  margin-bottom: 40px;
+}
+
+h2 {
+    color:white;
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+   
+}
+
+.links1 {
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#container-comment {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 10px 4px 10px 545px;
+}
+
+
+
+.row{
+    margin-top: 3em;
+ 
+}
+
+.container {
+    width: 100vw;
+    margin-bottom: 80px;
+}
+
+.content {
+    
+    text-align: center; 
+    padding: 10px;   
+    width: 100vw;}
+
+
+@media (max-width:500px) 
+{.container1
+{font-size: 1em;
+color: lightcoral;
+}}
+
+@media (min-width:700px) 
+{.container1
+{font-size: 1.2em;
+color: pink;
+}}
+
+
+.hobbies{
+    color:coral;
+    font-size: 1em;
+    width: 100vw;
+   
+    text-align: center;
+}
+
+textarea {
+    width: 50em;
+    height: 25em;
+    background: white;
+    color: black;
+    font-size: 0.4em;
+   
+   
+}
+
+.comment-text {
+    width: 100vw;
+    padding: 0em 25em;
+}
+
+.comm {
+    width: 100vw;
+    padding: 0em 28em;
+   
+}
+
+input {
+    width: 10em;
+}
+
+
+
