@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    
+   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <title>Coldplay</title>
+  
+
+    
+
+</head>
+<body>
+
+    <script type="text/javascript" src="index.js"></script>
+
+    <div class="container1">
+        <h1>Coldplay's fan page</h1> 
+    </div>
+
+   <div class="bio">
+        <div class='links'>
+            <button type="button" class="btn btn-dark">
+                <a href='tours.html'>Tours</a>
+            </button>
+            <button type="button" class="btn btn-dark">
+            <a href='about.html'>About author</a>
+            </button>
+        </div>
+    <div class="content">
+    <p>Coldplay, formed in 1996 is a British rock band and was started by lead guitarist Jonny Buckland and lead vocalist and keyboardist Chris Martin during their time in University College London. They started with the name Pectoralz, later changing it into Starfish and finally Coldplay. Guy Berryman, joined the group as a bassist in 1997 and Will Champion as the drummer later. </p>
+</div>
+    </div>
+
+
+    <img src="images/df378e4cd71c45f2c51702b0a3290547.png" id="band" alt="band image"/>
+
+<div class='container'>
+    
+    <h2>Top Albums</h2>
+    <div class='row'>  
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/2.jpg" alt="album2"/> 
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/album 1.jpg" alt="album3"/>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/album 2.jpg" alt="album4"/>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/album 3.jpeg" alt="album5"/>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/3.jpg" alt="album6"/>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-2">
+             <img class="album" src="images/4.jpg" alt="album7"/>
+        </div>
+
+        </div>
+</div>
+
+<div class="comm">
+        <input id="comment-input">
+        <input type="submit" value="Comment">
+    </div>
+
+<div class="comment-text">
+    <textarea id="container2" type="text"> </textarea>
+</div>
+
+<div class="footer">
+    <footer>Visit Coldplay's official <a href="http://coldplay.com/">website!</a> </p></footer>
+</div>
+
+
+   
+<script>
+
+
+
+var img = $("#band" ).hover(function() {
+    $( "#band" ).animate({
+    opacity: 0.5,
+    height: "+=12"
+}, 600, function() {
+    // Animation complete.
+});
+});
+
+  
+var input = $( "#comment-input").submit(function( event ) {
+    console.log (event);
+});
+
+var textarea = $.Callbacks()
+callback.add(event);
+
+ </script>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
