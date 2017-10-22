@@ -22,27 +22,34 @@ img {
     margin-right: 8px;
 }
 
-img.col-xs-12, img.col-sm-6 {
+img.col-xs-12,
+img.col-sm-6 {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.red-link { color: red; }
+.red-link {
+    color: red;
+}
 
-label { color: rgb(119, 119, 119); }
+label {
+    color: rgb(119, 119, 119);
+}
 
 table {
     width: 100%;
     border: 1px dotted black;
 }
 
-th, td {
+th,
+td {
     padding: 8px;
     border-bottom: 1px dotted black;
 }
 
-td:nth-child(1) { width: 200px; }
-
+td:nth-child(1) {
+    width: 200px;
+}
 
 
 /* --------------- Main (page) --------------- */
@@ -80,91 +87,124 @@ td:nth-child(1) { width: 200px; }
 
 /* --------------- Author (page) --------------- */
 
-#author-container #interests-list ul { list-style-type: none; }
+#author-container #interests-list ul {
+    list-style-type: none;
+}
 
-#author-container h2 { color: rgb(53, 122, 183) }
+#author-container h2 {
+    color: rgb(53, 122, 183)
+}
 /* --------------- Author (page) --------------- */
 
 
 /* --------------- Albums (page) --------------- */
 
-#albums-container .row div { padding: 8px; }
+#albums-container .row div {
+    padding: 8px;
+}
 
-#albums-container .row img { margin-right: 0; text-align: center; }
+#albums-container .row img {
+    margin-right: 0;
+    text-align: center;
+}
+
 
 /* phone */
+
 #albums-container .row .col-md-3 img {
-    min-height: 223px; 
-    max-height: 225px; 
+    min-height: 223px;
+    max-height: 225px;
 }
+
 
 /* tablet */
-#albums-container .row .col-sm-4 img { 
-    min-height: 232px; 
-    max-height: 234px; 
+
+#albums-container .row .col-sm-4 img {
+    min-height: 232px;
+    max-height: 234px;
 }
+
 
 /* laptop / desktop */
-#albums-container .row .col-md-3 img { 
-    min-height: 223px; 
-    max-height: 225px; 
+
+#albums-container .row .col-md-3 img {
+    min-height: 223px;
+    max-height: 225px;
 }
 
+#albums-container div span {
+    display: block;
+    text-align: center;
+    height: 40px;
+}
 
-#albums-container div span { display: block; text-align: center; height: 40px; }
-
-#albums-container div button { width: 100%; }
+#albums-container div button {
+    width: 100%;
+}
 /* --------------- Albums (page) --------------- */
-
 
 
 /* ------------------------------ Media Queries ------------------------------ */
 
 @media only screen and (min-device-width: 768px) {
-
-    #firstNameDiv { padding-left: 0px; }
-    
-    #lastNameDiv { padding-right: 0px; }
+    #firstNameDiv {
+        padding-left: 0px;
+    }
+    #lastNameDiv {
+        padding-right: 0px;
+    }
 }
 
 @media only screen and (max-device-width: 414px) {
-
-    p, #comments-row { padding: 0 8px; }
-    
-    #firstNameDiv, #lastNameDiv { padding: 0; }
-
-    /* --------------- Author (page) --------------- */
-    #author-container h2 { 
-        text-align: center;
-        color: rgb(53, 122, 183) 
+    p,
+    #comments-row {
+        padding: 0 8px;
     }
-
-    #interests-list { padding: 0 8px; }
+    #firstNameDiv,
+    #lastNameDiv {
+        padding: 0;
+    }
     /* --------------- Author (page) --------------- */
-
-
+    #author-container h2 {
+        text-align: center;
+        color: rgb(53, 122, 183)
+    }
+    #interests-list {
+        padding: 0 8px;
+    }
+    /* --------------- Author (page) --------------- */
+    
     /* --------------- Albums (page) --------------- */
-
-    #albums-container .row div { float: none; width: 80%; margin: 0 auto; }
+    #albums-container .row div {
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+    }
     /* --------------- Albums (page) --------------- */
 }
 
-
 @media only screen and (max-width: 500px) {
-
-    body { color: rgb(51, 122, 183); }
-
-    p { font-size: 1.1em; }
+    body {
+        color: rgb(51, 122, 183);
+    }
+    p {
+        font-size: 1.1em;
+    }
 }
 
 @media only screen and (max-width: 700px) and (min-width: 501px) {
+    body {
+        color: red;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    #band-link a {
+        color: #337ab7;
+    }
+    #band-link a:hover {
+        color: red;
+    }
+}
 
-    body { color: red; }
-
-    p { font-size: 1.4em; }
-
-    #band-link a { color: #337ab7; }
-
-    #band-link a:hover { color: red; }
-}​
-
+​
